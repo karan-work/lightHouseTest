@@ -13,7 +13,7 @@ jobs:
       with:
         urls: "www.espn.com"
     - name: Upload report
-      uses: 
+      uses: actions/upload-artifact@master
       with:
         name: Lightout report output
         path: ../
