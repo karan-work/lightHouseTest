@@ -16,5 +16,5 @@ jobs:
       uses: actions/upload-artifact@master
       with:
         name: Lightout report output
-        path: ../
+        path: ../lightHouseResults
 
