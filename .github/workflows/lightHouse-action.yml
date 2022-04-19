@@ -11,7 +11,7 @@ jobs:
     - name: Lighthouse
       uses: foo-software/lighthouse-check-action@master
       with:
-        urls: "www.espn.com"
+        urls: 'https://www.espn.com'
     - name: Upload report
       uses: actions/upload-artifact@master
       with:
