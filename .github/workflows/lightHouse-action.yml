@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@main
-    - run:  mkdir ${{ github.workspace }}/tmp/artifacts
+    - run:  mkdir ${{ github.workspace }}/lightHouseResults
     - name: Lighthouse
       uses: foo-software/lighthouse-check-action@master
       with:
@@ -19,5 +19,4 @@ jobs:
       with:
         name: Lightout report output
         # specify directory/filePath we want to write to
-        path: ${{ github.workspace }}/tmp/artifacts
-
+        path: ${{ github.workspace }}/lightHouseResults
