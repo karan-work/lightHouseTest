@@ -13,7 +13,7 @@ jobs:
       uses: foo-software/lighthouse-check-action@master
       with:
         # here we'll use the access tokens from a different GH account to output to PRs
-        + accesstoken: ${{ secrets.LIGHTHOUSE_CHECK_GITHUB_ACCESS_TOKEN}}
+        accesstoken: ${{ secrets.LIGHTHOUSE_CHECK_GITHUB_ACCESS_TOKEN}}
         outputDirectory: ${{ github.workspace }}/lightHouseResults
         urls: 'https://www.espn.com'
     # artifacts upload that wipes on new merges (actions runs in containera)
